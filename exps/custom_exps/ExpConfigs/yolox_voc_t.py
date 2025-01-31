@@ -20,7 +20,7 @@ class Exp(MyExp):
         self.test_size = (416, 416)
         self.enable_mixup = False
         self.warmup_epochs = 1
-        self.max_epoch = 100
+        self.max_epoch = 300
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
 
     def get_data_loader(self, batch_size, is_distributed, no_aug=False, cache_img=False):
